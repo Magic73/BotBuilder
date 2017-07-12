@@ -108,7 +108,6 @@ namespace Microsoft.Bot.Builder.Internals.Fibers
                 return this.store.TryLoad(out item);
             }
             catch (Exception)
-            {
                 // exception in loading the serialized data
                 item = default(T);
                 return false;
